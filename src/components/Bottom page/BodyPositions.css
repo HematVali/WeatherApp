@@ -1,0 +1,28 @@
+.body-positions-container {
+    grid-row: 1 / 4;
+    margin: 1rem;
+    margin-bottom: 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: #d5c2ad;
+    border-width: 0.1rem;
+    background-color: #3e3c3f;
+    color: #d5c2ad;
+    text-align: center;
+    }
+
+.body-positions-container h2 {
+text-align: center;
+color: #d5c2ad;
+}
+
+@media (max-width: 768px) {
+    .body-positions-container {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+        grid-area: e;
+    }
+
+}

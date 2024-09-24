@@ -1,0 +1,6 @@
+.search-form{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: end;
+}

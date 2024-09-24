@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin-bottom: 1rem;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+}
+
+.dateTitle {
+  margin: 0.5rem;
+  color: #282525;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+.dark-mode .dateTitle {
+  color: #f5f5f5; 
+}
+
+.dark-mode .dark-mode-label {
+  color: #f5f5f5;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.react-toggle .react-toggle-track {
+  background-color: #add8e6;
+}
+
+.react-toggle:not(.react-toggle--disabled) .react-toggle-track:hover {
+  background-color: #add8e6 !important; 
+}
+
+.react-toggle.react-toggle--checked .react-toggle-track {
+  background-color: black;
+}
+
+.react-toggle.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background-color: black !important; 
+}
+
+@media (max-width: 767px){
+  .header{
+    display: flex;
+    flex-direction: column;
+  }
+}

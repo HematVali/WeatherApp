@@ -1,0 +1,427 @@
+.detailed-weather {
+    background-color: #d9eded;
+    padding: 2rem;
+}
+
+.detailed-weather-main {
+    background-color: white;
+    height: 100%;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.back-button-image {
+    width: 2rem;
+    height: 2rem;
+    outline: none;
+}
+
+button {
+    outline: none;
+    border-style: none;
+    background-color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.detailed-weather-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.weather-overview-container {
+    grid-column: 1 / 5;
+    background-color: #b7cdd4;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hourly-forecast-component {
+    grid-column: 1 / 3;
+    background-color: #cde7ef;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem;
+    padding: 2rem;
+    padding-bottom: 0;
+    padding-top: 0;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hourly-weather-container:hover {
+    overflow-x: scroll;
+}
+
+.detailed-hourly-data {
+    padding: 1rem;
+}
+
+.atmospheric-pressure-container {
+    grid-column: 3 / 5;
+    background-color: #b0dce9;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    padding-top: 0;
+}
+
+#atmospheric-pressure-descriptor {
+    margin-top: 2rem;
+    margin-left: 0.2rem;
+    font-size: 1.2rem
+}
+
+.atmospheric-pressure-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.atmospheric-pressure-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.atmospheric-pressure-info {
+    background-color: #e4f3f7;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.sun-container {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    background-color: #b0dce9;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.wind-container {
+    grid-column: 2 / 4;
+    background-color: #b0dce9;
+    border-radius: 2rem;
+    padding: 2rem;
+    padding-top: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.wind-container h3 {
+    color: black;
+}
+
+.wind-speed-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wind-speed-data {
+    grid-row: 1 / 3;
+    text-align: end;
+    margin-right: 1rem;
+}
+
+.wind-speed-units {
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+
+.wind-speed-label {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 0.3rem;
+}
+
+hr {
+    border-color: black;
+}
+
+.gust-speed-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gust-speed-data {
+    grid-row: 1 / 3;
+    text-align: end;
+    margin-right: 1rem;
+}
+
+.gust-speed-units {
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+
+.gust-speed-label {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 0.3rem;
+}
+
+.mm-index-container {
+    background-color: #b0dce9;
+    border-radius: 2rem;
+    padding: 2rem;
+    padding-top: 0;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+#mm-index-descriptor {
+    margin-top: 0;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.mm-index-description {
+    background-color: #e4f3f7;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: grid;
+}
+
+.sun-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sun-mini{    
+    display: flex;
+    flex-direction: column;
+}
+
+.feels-like-container {
+    background-color: #b0dce9;
+    border-radius: 2rem;
+    padding: 1rem;
+    padding-top: 0;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.feels-like-description {
+    background-color: #e4f3f7;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: grid;
+}
+
+.feels-like-container h1 {
+    margin-bottom: 0.5rem;
+}
+
+.feels-like-container h2 {
+    margin-bottom: 1rem;
+}
+
+.mm-fontsize{
+    font-size: 3rem;
+}
+
+.visibility-container {
+    background-color: #b0dce9;
+    border-radius: 2rem;
+    padding: 1rem;
+    padding-top: 0;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.visibility-description {
+    background-color: #e4f3f7;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: grid;
+}
+
+.visibility-container h1 {
+    margin-bottom: 0.5rem;
+}
+
+.visibility-container h2 {
+    margin-bottom: 1rem;
+}
+
+.humidity-container {
+    background-color: #b0dce9;
+    border-radius: 2rem;
+    padding: 1rem;
+    padding-top: 0;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.humidity-description {
+    background-color: #e4f3f7;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: grid;
+}
+
+.humidity-container h1 {
+    margin-bottom: 0.5rem;
+}
+
+.humidity-container h2 {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+    .detailed-weather-main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .sun-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .sun-mini{    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detailed-weather-body {
+        grid-template-columns: 1fr;
+    }
+
+    .weather-overview-container {
+        grid-column: 1;
+    }
+
+    .hourly-weather-container {
+        grid-column: 1;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-right: 0;
+    }
+
+    .atmospheric-pressure-container {
+        grid-column: 1;
+        margin-left: 0;
+    }
+
+    .precipitation-container {
+        grid-column: 1;
+        grid-row: auto;
+        margin-right: 0;
+    }
+
+    .wind-container {
+        grid-column: 1;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .mm-index-container {
+        grid-column: 1;
+        margin-left: 0;
+    }
+
+    .feels-like-container {
+        grid-column: 1;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .visibility-container {
+        grid-column: 1;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .humidity-container {
+        grid-column: 1;
+        margin-left: 0;
+    }
+}
+
+.dark-mode .detailed-weather {
+    background-color: #121212; 
+}
+
+.dark-mode .detailed-weather-main {
+    background-color: #1E1E1E; 
+    color: #E0E0E0; 
+}
+.dark-mode .weather-overview-container h2,
+.dark-mode .weather-overview-container p1,
+.dark-mode .weather-overview-container p2 {
+  color: #ffffff; 
+}
+
+.dark-mode .weather-overview-container,
+.dark-mode .sun-container,
+.dark-mode .hourly-forecast-component,
+.dark-mode .atmospheric-pressure-container,
+.dark-mode .precipitation-container,
+.dark-mode .wind-container,
+.dark-mode .mm-index-container,
+.dark-mode .feels-like-container,
+.dark-mode .visibility-container,
+.dark-mode .humidity-container {
+    background-color: #2A2A2A;
+    border: 1px solid #333333;
+    color: #E0E0E0; 
+}
+
+.dark-mode .back-button-image {
+    filter: invert(1); 
+}
+
+
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode p {
+    color: #E0E0E0; 
+}
+
+.dark-mode .atmospheric-pressure-info, 
+.dark-mode .mm-index-description, 
+.dark-mode .feels-like-description, 
+.dark-mode .visibility-description, 
+.dark-mode .humidity-description {
+    background-color: #333333; 
+    color: #E0E0E0; 
+}
+
+.sun-img{
+    width: 15rem;
+}
+
+
+.dark-mode ::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+    background: #2A2A2A; 
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+    background: #444444; 
+}
+
+.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: #555555; 
+}

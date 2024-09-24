@@ -1,0 +1,103 @@
+.daily-forecast {
+  display: flex;
+  align-items: center;
+  background-color: #88adb5;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.scrolling-container2 {
+  display: inline-flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  height: 8rem;
+}
+
+.scrolling-container2:hover {
+  overflow-x: auto;
+}
+
+.image{
+  height: 90%;
+  width: 40%;
+  margin-top: -1rem;
+}
+
+.table-wrapper2 {
+  width: 100%; 
+  max-width: 1200px; 
+  height: 100%;
+}
+
+.daily-table {
+  border-spacing: 2em 0; 
+  height: 100%;
+}
+
+.daily-forecast-td {
+  padding: 0;
+  padding-left: 1rem;
+  border-radius: 30px;
+  border: 3px solid #1F2130;
+  background: #FFF;
+  min-width: 12rem; 
+  height: 100%;
+}
+
+.day{
+  display: flex;
+  justify-content: space-between;
+  font-family: Inter;
+  font-size:1.5rem;
+  font-style: normal;
+}
+
+.conditions{
+  color: #5F5A5A;
+  font-family: Inter;
+  font-size: 0.5em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.daily-temperature{
+  padding-right: 1rem;
+  font-family: Inter;
+  font-size: 2.2rem;
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .scrolling-container2{
+    overflow-x: auto;
+  }
+
+  .daily-forecast{
+    width: 80%;
+  }
+}
+
+.daily-forecast {
+  max-width: 75rem; 
+}
+
+@media (max-width: 95rem) {
+  .daily-forecast {
+    max-width: 60rem; 
+  }
+}
+
+@media (max-width: 84rem) {
+  .daily-forecast {
+    max-width: 40rem; 
+  }
+}
+
+@media (max-width: 65rem) {
+  .daily-forecast {
+    max-width: 35rem; 
+  }
+}

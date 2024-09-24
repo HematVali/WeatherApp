@@ -1,0 +1,91 @@
+.hourly-forecast {
+  display: flex;
+  align-items: center;
+  background-color: #c7e8f1;
+  border-radius: 1rem;
+  height: 9rem;
+  max-width: 80rem; 
+}
+
+.scrolling-container {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap; 
+  height: 6rem; 
+}
+
+.scrolling-container:hover {
+  overflow-x: auto; 
+  overflow-y: hidden;
+}
+
+
+.table-wrapper {
+  width: 1200px; 
+  height: 100%;
+}
+
+table {
+  height: 100%;
+}
+
+.table-wrapper2 {
+  height: 100%;
+  border-spacing: 10px;
+}
+
+.image-hourly{
+  margin: 0;
+  height: 2rem;
+  width: 2.2rem;
+}
+
+.hourly-forecast-td {
+  padding: 0;
+  min-width: 4rem; 
+  height: 100%;
+}
+
+.hourly-data{
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.dark-mode .hourly-forecast .hourly-data {
+  background-color: #333;
+  color: #f5f5f5; 
+}
+
+@media (max-width: 767px) {
+  .hourly-forecast {
+    width: 87%;
+  }
+
+  .scrolling-container{
+    overflow-x: auto;
+  }
+}
+
+
+@media (max-width: 95rem) {
+  .hourly-forecast {
+    max-width: 60rem; 
+  }
+}
+
+@media (max-width: 84rem) {
+  .hourly-forecast {
+    max-width: 40rem; 
+  }
+}
+
+@media (max-width: 65rem) {
+  .hourly-forecast {
+    max-width: 30rem; 
+  }
+}

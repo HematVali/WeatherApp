@@ -1,0 +1,38 @@
+.stargazing-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto; 
+    background-color: #1f2930;
+    margin-top: 0;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem; 
+}
+
+
+
+.upcoming-events-h2 {
+    background-color: #d5c2ad;
+    border-radius: 2rem;
+    padding: 1rem;
+    padding-right: 1.5rem;
+    margin: 0.5rem;
+    margin-left: 0;
+    color: #1f2930;
+    width: fit-content;
+}
+
+@media (max-width: 1200px) {
+    .stargazing-container{
+        display: grid;
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e";
+    }   
+}

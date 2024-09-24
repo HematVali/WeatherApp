@@ -1,0 +1,97 @@
+.current-weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b1cdd3;
+  grid-row: 1 / span 2;
+  margin-right: 1rem;
+  border-radius: 3rem;
+  border-style: solid;
+  border-width: 0px;
+  border-color: #d9eded;
+  padding: 2rem;
+  padding-left: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.flag {
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border-radius: 3rem;
+  z-index: 0;
+  filter: blur(1px);
+}
+
+.gradient {
+  position: absolute;
+  width: 102% !important;
+  height: 102% !important;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(0, 0, 0, 0));
+  z-index: 1;
+  border-radius: 3rem;
+}
+
+.data {
+  z-index: 2;
+  align-self: flex-start;
+}
+
+.main-content {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr; 
+  gap: 1rem; 
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  }
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+h2{
+  color: #282525;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+p1{
+  color: #5F5A5A;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+p2{
+  color: #282525;
+  font-family: Inter;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.textLink {
+  text-decoration: none;
+}
